@@ -1,0 +1,1 @@
+SELECT strftime('%Y-%m', emissao) AS mes, SUM(faturamento) AS faturamento FROM pedidos_efetivos GROUP BY mes ORDER BY faturamento DESC LIMIT 1;

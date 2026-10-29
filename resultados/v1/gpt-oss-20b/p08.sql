@@ -1,0 +1,1 @@
+SELECT SUM(faturamento) / COUNT(DISTINCT pedido) AS ticket_medio FROM pedidos_efetivos WHERE cliente = 'Comercial Alfa';

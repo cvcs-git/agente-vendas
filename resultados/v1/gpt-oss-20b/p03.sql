@@ -1,0 +1,1 @@
+WITH total AS ( SELECT SUM(faturamento) AS total_faturamento FROM pedidos_efetivos ), cliente_faturamento AS ( SELECT cliente, SUM(faturamento) AS faturamento FROM pedidos_efetivos GROUP BY cliente ) SELECT cf.cliente, cf.faturamento, (cf.faturamento / t.total_faturamento) * 100 AS percent FROM cliente_faturamento cf CROSS JOIN total t ORDER BY cf.faturamento DESC LIMIT 1;

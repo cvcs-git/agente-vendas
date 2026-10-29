@@ -1,0 +1,1 @@
+SEM DADOS: Não há tabela de produção no esquema fornecido.

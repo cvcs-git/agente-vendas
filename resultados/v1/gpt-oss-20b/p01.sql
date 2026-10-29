@@ -1,0 +1,1 @@
+SELECT cliente, COUNT(DISTINCT pedido) AS num_pedidos FROM pedidos_efetivos WHERE strftime('%Y-%m', emissao) = strftime('%Y-%m', date('now')) GROUP BY cliente ORDER BY num_pedidos DESC LIMIT 1;

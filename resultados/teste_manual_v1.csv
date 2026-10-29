@@ -16,3 +16,8 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 29/10/2026;gemini-3.8-flash;v1;P14;sim;sim;acumulado sem ROWS UNBOUNDED PRECEDING (erraria com empates de faturamento)
 29/10/2026;gemini-3.8-flash;v1;P15;sim;nao;devolveu a serie mensal sem comparar periodos (criterio de tendencia ausente no prompt v1)
 29/10/2026;gemini-3.8-flash;v1;P16;nao;sim;pediu esclarecimento corretamente com ESCLARECER
+29/10/2026;openai/gpt-oss-20b;v1;P05;sim;sim;Emissao sem aspas (funciona no SQLite)
+29/10/2026;openai/gpt-oss-20b;v1;P01;sim;nao;usou date('now') em vez da data de referencia do prompt (resultado vazio)
+29/10/2026;openai/gpt-oss-20b;v1;P02;sim;nao;usou date('now') em vez da data de referencia do prompt (resultado vazio); resto da logica correto
+29/10/2026;openai/gpt-oss-20b;v1;P03;sim;sim;usou a view pedidos_efetivos com CROSS JOIN; percentual sem arredondamento
+29/10/2026;openai/gpt-oss-20b;v1;P04;nao;sim;recusou corretamente com SEM DADOS

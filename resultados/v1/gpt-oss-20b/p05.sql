@@ -1,0 +1,1 @@
+SELECT SUM(Total) AS faturamento_julho_2026 FROM vendas WHERE strftime('%Y-%m', Emissão) = '2026-07';
