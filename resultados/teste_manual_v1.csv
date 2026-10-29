@@ -21,3 +21,15 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 29/10/2026;openai/gpt-oss-20b;v1;P02;sim;nao;usou date('now') em vez da data de referencia do prompt (resultado vazio); resto da logica correto
 29/10/2026;openai/gpt-oss-20b;v1;P03;sim;sim;usou a view pedidos_efetivos com CROSS JOIN; percentual sem arredondamento
 29/10/2026;openai/gpt-oss-20b;v1;P04;nao;sim;recusou corretamente com SEM DADOS
+29/10/2026;openai/gpt-oss-20b;v1;P06;sim;sim;agrupou so por codigo com MIN(Descricao) (mais robusto que o gabarito)
+29/10/2026;openai/gpt-oss-20b;v1;P07;nao;nao;resposta com marcacao markdown e duas consultas (nao roda); logica correta
+29/10/2026;openai/gpt-oss-20b;v1;P08;sim;nao;buscou o cliente com igualdade exata em vez de LIKE (resultado vazio); logica do ticket correta
+29/10/2026;openai/gpt-oss-20b;v1;P09a;sim;sim;
+29/10/2026;openai/gpt-oss-20b;v1;P09b;nao;nao;coluna Emissao sem acento (nao existe); Qnt > 0 mede unidades brutas, nao liquidas; sem excluir NFe 2217
+29/10/2026;openai/gpt-oss-20b;v1;P10;sim;sim;
+29/10/2026;openai/gpt-oss-20b;v1;P11;sim;sim;excluiu a NFe 2217 tambem na contagem de produtos (regra aplicada fora do contexto, sem efeito em maio)
+29/10/2026;openai/gpt-oss-20b;v1;P12;sim;nao;tratou rentavel como faturamento em vez de recusar com SEM DADOS
+29/10/2026;openai/gpt-oss-20b;v1;P13;sim;sim;uma CTE por trimestre com JOIN (descartaria clientes ausentes em um dos trimestres); NULLIF contra divisao por zero
+29/10/2026;openai/gpt-oss-20b;v1;P14;sim;sim;acerto acidental: usou "Razão Social" na view (coluna inexistente; SQLite tratou como texto) e o GROUP BY salvou o resultado
+29/10/2026;openai/gpt-oss-20b;v1;P15;sim;nao;comparou cada mes com o anterior (3 altas, 4 quedas) em vez das medias dos periodos; levaria a conclusao oposta
+29/10/2026;openai/gpt-oss-20b;v1;P16;sim;nao;escolheu faturamento sozinho em vez de pedir esclarecimento com ESCLARECER
