@@ -7,7 +7,8 @@
 - Temperatura: 0
 - Uma conversa nova para cada pergunta
 - Uma rodada por pergunta (as repetições ficam para os testes automatizados)
-- Commit do projeto no início do teste: (preencher com o resultado de git log -1 --oneline)
+- Commit do projeto no início do teste: aa3a96f Prompt do sistema v1 e estrutura de teste manual
+- Gemini: thinking level Medium; Grounding with Google Search desligado; temperatura padrão (não ajustável)
 
 ## Critérios de correção
 - A SQL gerada é executada com consulta.py, e o resultado é comparado com o do gabarito (sql/gabarito/).

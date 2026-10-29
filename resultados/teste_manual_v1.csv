@@ -1,1 +1,18 @@
 data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
+29/10/2026;gemini-3.8-flash;v1;P05;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P01;sim;sim;usou a view pedidos_efetivos em vez de pedidos liquidos (mesmo resultado); resposta em 3 min
+29/10/2026;gemini-3.8-flash;v1;P02;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P03;sim;sim;percentual sem arredondamento
+29/10/2026;gemini-3.8-flash;v1;P04;nao;sim;recusou corretamente com SEM DADOS
+29/10/2026;gemini-3.8-flash;v1;P06;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P07;sim;sim;sem a coluna de numero de intervalos (regra ausente no prompt v1)
+29/10/2026;gemini-3.8-flash;v1;P08;sim;sim;sem arredondamento; nao agrupa por cliente (somaria clientes com nomes parecidos)
+29/10/2026;gemini-3.8-flash;v1;P09a;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P09b;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P10;sim;sim;
+29/10/2026;gemini-3.8-flash;v1;P11;sim;sim;filtrou vendas por Qnt > 0 em vez de Total > 0 (equivalente)
+29/10/2026;gemini-3.8-flash;v1;P12;nao;sim;recusou corretamente com SEM DADOS
+29/10/2026;gemini-3.8-flash;v1;P13;sim;sim;tratou divisao por zero e incluiu coluna Cresceu/Caiu
+29/10/2026;gemini-3.8-flash;v1;P14;sim;sim;acumulado sem ROWS UNBOUNDED PRECEDING (erraria com empates de faturamento)
+29/10/2026;gemini-3.8-flash;v1;P15;sim;nao;devolveu a serie mensal sem comparar periodos (criterio de tendencia ausente no prompt v1)
+29/10/2026;gemini-3.8-flash;v1;P16;nao;sim;pediu esclarecimento corretamente com ESCLARECER

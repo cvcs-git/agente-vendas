@@ -1,0 +1,1 @@
+ESCLARECER: Você gostaria de saber o melhor mês com base no faturamento, na quantidade de unidades vendidas ou no número de pedidos?

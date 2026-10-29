@@ -1,0 +1,1 @@
+SEM DADOS: O banco de dados contém apenas registros de vendas e faturamento, não havendo informações sobre a produção industrial.

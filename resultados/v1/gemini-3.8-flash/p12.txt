@@ -1,0 +1,1 @@
+SEM DADOS: Não há informações de custos ou margens de lucro no banco de dados para calcular a rentabilidade dos clientes.
