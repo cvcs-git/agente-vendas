@@ -1,1 +1,18 @@
 data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
+30/10/2026;openai/gpt-oss-20b;v2;P01;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P02;sim;sim;so o codigo, sem a descricao do produto
+30/10/2026;openai/gpt-oss-20b;v2;P03;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P04;sim;nao;regressao: respondeu com vendas em vez de SEM DADOS (no v1 recusou corretamente)
+30/10/2026;openai/gpt-oss-20b;v2;P05;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P06;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P07;sim;sim;consulta unica com numero de intervalos e coluna marcando o menor
+30/10/2026;openai/gpt-oss-20b;v2;P08;nao;nao;erro do prompt v2: manda buscar em nome_fantasia, que nao existe na view pedidos_efetivos; LIKE e formula do ticket corretos
+30/10/2026;openai/gpt-oss-20b;v2;P09a;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P09b;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P10;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P11;sim;sim;
+30/10/2026;openai/gpt-oss-20b;v2;P12;sim;nao;tratou rentavel como faturamento em vez de SEM DADOS (mesmo erro da v1, apesar do exemplo explicito no prompt)
+30/10/2026;openai/gpt-oss-20b;v2;P13;sim;sim;LEFT JOIN com COALESCE (mantem quem parou de comprar); nao inclui clientes novos do 2o trimestre
+30/10/2026;openai/gpt-oss-20b;v2;P14;sim;sim;acerto legitimo (na v1 foi acidental); acumulado sem ROWS UNBOUNDED PRECEDING
+python consulta.py resultados/v2/gpt-oss-20b/p15.sql
+30/10/2026;openai/gpt-oss-20b;v2;P16;nao;sim;pediu esclarecimento corretamente, mas o exemplo do prompt v2 era a propria pergunta (resultado contaminado)
