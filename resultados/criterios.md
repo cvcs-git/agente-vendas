@@ -9,6 +9,7 @@
 - Uma rodada por pergunta (as repetições ficam para os testes automatizados)
 - Commit do projeto no início do teste: aa3a96f Prompt do sistema v1 e estrutura de teste manual
 - Gemini: thinking level Medium; Grounding with Google Search desligado; temperatura padrão (não ajustável)
+- openai/gpt-oss-20b (Groq): temperatura 0; reasoning effort medium; max completion tokens 8192; ferramentas desligadas
 
 ## Critérios de correção
 - A SQL gerada é executada com consulta.py, e o resultado é comparado com o do gabarito (sql/gabarito/).
