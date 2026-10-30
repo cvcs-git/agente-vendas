@@ -6,6 +6,6 @@ SELECT "#" AS codigo_produto,
     CAST(SUM(Qnt) AS INTEGER) AS unidades
 FROM vendas
 WHERE strftime('%Y-%m', "Emissão") = '2026-08'
-    AND Nota <> 'NFe 2217'
+    AND Qnt % 1 = 0
 GROUP BY "#", "Descrição"
 ORDER BY unidades DESC;

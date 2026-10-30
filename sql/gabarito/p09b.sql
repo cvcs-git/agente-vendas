@@ -4,6 +4,6 @@ SELECT Vendedor,
         CAST(SUM(Qnt) AS INTERGER) AS unidades
 FROM vendas
 WHERE strftime ('%Y-%m', "Emissão") = '2026-05'
-    AND Nota <> 'NFe 2217'
+    AND Qnt % 1 = 0
 GROUP BY Vendedor 
 ORDER BY unidades DESC;
