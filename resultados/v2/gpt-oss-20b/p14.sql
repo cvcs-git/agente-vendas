@@ -1,0 +1,2 @@
+WITH cliente_fat AS ( SELECT cliente, SUM(faturamento) AS faturamento FROM itens GROUP BY cliente ), ranked AS ( SELECT cliente, faturamento, SUM(faturamento) OVER (ORDER BY faturamento DESC) AS cum_fat, ROW_NUMBER() OVER (ORDER BY faturamento DESC) AS rn, (SELECT SUM(faturamento) FROM itens) AS total_fat FROM cliente_fat ) SELECT MIN(rn) AS quantidade_clientes FROM ranked WHERE cum_fat >= 0.8 * total_fat;
+

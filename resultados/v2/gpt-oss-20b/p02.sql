@@ -1,0 +1,1 @@
+SELECT codigo_produto, SUM(quantidade) AS unidades FROM itens WHERE mes = '2026-08' GROUP BY codigo_produto ORDER BY unidades DESC LIMIT 1
