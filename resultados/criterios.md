@@ -4,7 +4,7 @@
 - Prompt de sistema: prompts/sistema_v1.md
 - Banco: data/vendas_sintetico.db, com a view pedidos_efetivos
 - Data de referência: 31/08/2026
-- Temperatura: 0
+- Temperatura: 0, quando o modelo permitir
 - Uma conversa nova para cada pergunta
 - Uma rodada por pergunta (as repetições ficam para os testes automatizados)
 - Commit do projeto no início do teste: aa3a96f Prompt do sistema v1 e estrutura de teste manual
@@ -24,3 +24,13 @@
 ## Respostas brutas
 - Cada resposta do modelo é salva em resultados/v1/<modelo>/<pergunta>.sql
   (ou .txt nas perguntas sem SQL: P04, P12, P16).
+
+## Teste manual v2
+- Prompt de sistema: prompts/sistema_v2.md
+- Banco: data/vendas_sintetico.db, com a camada silver (silver_itens) e as views gold (itens, pedidos_efetivos)
+- Gabarito: P02, P06 e P09b passam a excluir só as linhas com quantidade fracionária (P06: código 443 = 4269000)
+- Commit do projeto no início do teste: (código do seu commit de hoje)
+- openai/gpt-oss-20b (Groq): mesma configuração da v1 (temperatura 0; reasoning effort medium; max completion tokens 8192; ferramentas desligadas)
+- Critérios de correção: os mesmos da v1
+- Respostas brutas em resultados/v2/<modelo>/
+- Limitação: a v2 muda o prompt e a camada de dados ao mesmo tempo; o resultado mede o efeito combinado, não o de cada mudança isoladamente
