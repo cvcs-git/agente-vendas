@@ -15,6 +15,7 @@ Definidas em 03 e 05/11/2026, antes das rodadas complementares da v1 e da v2.
 3. Quando o prompt não define um termo, toda resposta defensável pelas regras do prompt conta como acerto (coluna `acerto`).
 4. SQLs de referência escritos sobre as views gold (`itens` e `pedidos_efetivos`, estado do commit `f76ac08`), validados em 05/11/2026 na base sintética. Valem também como gabarito da v1: os resultados são os mesmos na tabela `vendas`.
 5. Data de referência: 31/08/2026.
+6. Em perguntas sem dados, só SEM DADOS conta como acerto. ESCLARECER conta como erro, porque os prompts reservam ESCLARECER para perguntas com mais de uma interpretação (decidido em 05/11/2026, na V09 da v1).
 
 ## Rodadas complementares (só perguntas novas, salvo indicação)
 
@@ -26,3 +27,4 @@ Definidas em 03 e 05/11/2026, antes das rodadas complementares da v1 e da v2.
 | gemini-3.8-flash | v2 | todas as 40 |
 
 Rodar antes de acrescentar `nome_fantasia` à view `pedidos_efetivos`. Placar sempre separado por conjunto.
+
