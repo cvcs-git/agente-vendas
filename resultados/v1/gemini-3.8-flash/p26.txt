@@ -1,0 +1,1 @@
+ESCLARECER: Você gostaria de saber o principal produto por faturamento (R$) ou por quantidade vendida (unidades)?

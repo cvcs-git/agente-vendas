@@ -1,0 +1,2 @@
+SEM DADOS: O banco de dados contém apenas dados de faturamento e vendas, sem
+informações de contas a receber, vencimento ou status de pagamento de boletos.

@@ -56,3 +56,26 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 05/11/2026;openai/gpt-oss-20b;v1;V08;sim;não;
 05/11/2026;openai/gpt-oss-20b;v1;V09;não;não;
 05/11/2026;openai/gpt-oss-20b;v1;V10;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;P18;sim;sim;Resultado vazio (correto). Buscou alça e alca. LOWER não converte Ç. Exclusão da NFe 2217 fora de contexto (sem efeito)
+05/11/2026;gemini-3.8-flash;v1;P19;não;sim;SEM DADOS distinguindo devoluções de cancelamentos (correto)
+05/11/2026;gemini-3.8-flash;v1;P20;sim;sim;NULL (correto). Buscou nome fantasia em vendas e filtrou pedidos_efetivos pela razão social
+05/11/2026;gemini-3.8-flash;v1;P21;sim;sim;Correto (2026-07). Buscou tampa e pret separados e usou a coluna cor
+05/11/2026;gemini-3.8-flash;v1;P22;não;não;ESCLARECER sobre o ano de março, mas a data de referência do prompt já define 2026
+05/11/2026;gemini-3.8-flash;v1;P23;sim;sim;Correto (439 +184700). Ano fixo 2026
+05/11/2026;gemini-3.8-flash;v1;P24;sim;sim;Correto (7 meses). Só vendas com Qnt > 0
+05/11/2026;gemini-3.8-flash;v1;P25;sim;sim;Correto (3)
+05/11/2026;gemini-3.8-flash;v1;P26;não;sim;ESCLARECER perguntando a métrica (faturamento ou unidades)
+05/11/2026;gemini-3.8-flash;v1;P27;sim;sim;Correto (5 clientes, GAMA 97 com 627000). Unidades líquidas, agrupou por código
+05/11/2026;gemini-3.8-flash;v1;P28;sim;sim;NULL (correto). Filtro '%/RN' e mês fixo
+05/11/2026;gemini-3.8-flash;v1;P29;sim;sim;Correto (40175.0)05/11/2026;gemini-3.8-flash;v1;P30;sim;sim;Correto (mar mai jun ago)
+05/11/2026;gemini-3.8-flash;v1;P30;sim;sim;Correto (mar mai jun ago)
+05/11/2026;gemini-3.8-flash;v1;V01;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V02;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V03;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V04;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V05;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V06;sim;não;
+05/11/2026;gemini-3.8-flash;v1;V07;não;não;
+05/11/2026;gemini-3.8-flash;v1;V08;sim;sim;
+05/11/2026;gemini-3.8-flash;v1;V09;não;sim;
+05/11/2026;gemini-3.8-flash;v1;V10;sim;sim;

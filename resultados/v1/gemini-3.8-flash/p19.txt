@@ -1,0 +1,2 @@
+SEM DADOS: O banco de dados não possui registros de devoluções, apenas notas de
+cancelamento.
