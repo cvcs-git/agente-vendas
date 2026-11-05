@@ -1,0 +1,2 @@
+
+SEM DADOS: não há dados sobre pedidos cancelados nas tabelas disponíveis (a view pedidos_efetivos contém apenas pedidos efetivos e a view itens contém apenas itens de notas fiscais).

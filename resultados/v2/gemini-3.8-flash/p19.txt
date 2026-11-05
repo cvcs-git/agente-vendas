@@ -1,0 +1,2 @@
+SEM DADOS: as tabelas contêm apenas registros de vendas e cancelamentos, não
+havendo informações sobre devoluções.

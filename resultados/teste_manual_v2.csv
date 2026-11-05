@@ -39,3 +39,43 @@ python consulta.py resultados/v2/gpt-oss-20b/p15.sql
 05/11/2026;openai/gpt-oss-20b;v2;V08;sim;sim;
 05/11/2026;openai/gpt-oss-20b;v2;V09;não;sim;
 05/11/2026;openai/gpt-oss-20b;v2;V10;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;P01;sim;sim;Correto (ALFA 28 pedidos em agosto)
+05/11/2026;gemini-3.8-flash;v2;P02;sim;sim;Correto (439 com 788100 em agosto)
+05/11/2026;gemini-3.8-flash;v2;P03;sim;sim;Correto (ALFA 1964182.4 e 37.6%)
+05/11/2026;gemini-3.8-flash;v2;P04;não;sim;SEM DADOS (correto). Não há dados de produção
+05/11/2026;gemini-3.8-flash;v2;P05;sim;sim;Correto (674023.4)
+05/11/2026;gemini-3.8-flash;v2;P06;sim;sim;Correto (97 com 4415100)
+05/11/2026;gemini-3.8-flash;v2;P07;sim;sim;Correto (ALFA 1.4 dias com 166 intervalos ... DELTA 6.8 com 33)
+05/11/2026;gemini-3.8-flash;v2;P08;sim;sim;Correto (11761.57). Buscou só em cliente e evitou o nome_fantasia inexistente na view
+05/11/2026;gemini-3.8-flash;v2;P09a;sim;sim;Correto (VENDEDOR B 368177.6)
+05/11/2026;gemini-3.8-flash;v2;P09b;sim;sim;Correto (VENDEDOR B 1158300 unidades líquidas)
+05/11/2026;gemini-3.8-flash;v2;P10;sim;sim;Correto (5)
+05/11/2026;gemini-3.8-flash;v2;P11;sim;sim;Correto (4). Não filtrou tipo venda (sem efeito)
+05/11/2026;gemini-3.8-flash;v2;P12;não;sim;SEM DADOS (correto). Não há custos nem rentabilidade
+05/11/2026;gemini-3.8-flash;v2;P13;sim;sim;Correto (3 cresceram e 2 caíram). Agregação única mantém todos os clientes. NULLIF contra divisão por zero
+05/11/2026;gemini-3.8-flash;v2;P14;sim;sim;Correto (4). Soma acumulada com desempate por cliente
+05/11/2026;gemini-3.8-flash;v2;P15;sim;sim;Correto (530694.9 | 775246.8 | 46.1). NTILE(2) divide os meses disponíveis ao meio
+05/11/2026;gemini-3.8-flash;v2;P16;não;sim;Contaminada: o exemplo de ESCLARECER do prompt v2 é a própria pergunta. Fora do placar
+05/11/2026;gemini-3.8-flash;v2;P18;sim;sim;Resultado vazio (correto). Buscou alça e alca. LIKE não encontraria ALÇA em maiúsculas
+05/11/2026;gemini-3.8-flash;v2;P19;não;sim;SEM DADOS distinguindo devoluções de cancelamentos (correto)
+05/11/2026;gemini-3.8-flash;v2;P20;sim;sim;NULL (correto). Interpretou Corneto como produto e não como cliente (leitura defensável)
+05/11/2026;gemini-3.8-flash;v2;P21;sim;não;Vazio (esperado 2026-07). Buscou '%preta%' mas a descrição tem PRETO. Na v1 acertou com '%pret%' e a coluna cor
+05/11/2026;gemini-3.8-flash;v2;P22;sim;não;Vazio (esperado 1890.40 ou 1984.92). LIKE '%tampa 26%' não encontra TAMPA PCO 26MM
+05/11/2026;gemini-3.8-flash;v2;P23;sim;sim;Correto (439 +184700)
+05/11/2026;gemini-3.8-flash;v2;P24;sim;sim;Correto (7 meses). Saldo líquido positivo por mês
+05/11/2026;gemini-3.8-flash;v2;P25;sim;sim;Correto (3)
+05/11/2026;gemini-3.8-flash;v2;P26;não;sim;ESCLARECER perguntando a métrica (faturamento ou unidades)
+05/11/2026;gemini-3.8-flash;v2;P27;sim;sim;Correto (5 clientes, GAMA 97 com 627000)
+05/11/2026;gemini-3.8-flash;v2;P28;sim;sim;NULL (correto). Previu os formatos /RN e - RN
+05/11/2026;gemini-3.8-flash;v2;P29;sim;sim;Correto (40175.0)
+05/11/2026;gemini-3.8-flash;v2;P30;sim;sim;Correto (mar mai jun ago). Média por cliente com janela
+05/11/2026;gemini-3.8-flash;v2;V01;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V02;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V03;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V04;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V05;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V06;sim;sim;
+05/11/2026;gemini-3.8-flash;v2;V07;não;sim;
+05/11/2026;gemini-3.8-flash;v2;V08;não;não;
+05/11/2026;gemini-3.8-flash;v2;V09;não;sim;
+05/11/2026;gemini-3.8-flash;v2;V10;sim;sim;
