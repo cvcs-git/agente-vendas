@@ -1,0 +1,1 @@
+SELECT SUM("Total") AS faturamento FROM vendas WHERE "Descrição" LIKE '%dosadora%' AND "Cidade/UF" LIKE '%Paulista%' AND strftime('%Y-%m', "Emissão") = '2026-04';

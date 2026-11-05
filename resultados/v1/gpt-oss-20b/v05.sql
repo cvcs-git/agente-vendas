@@ -1,0 +1,1 @@
+SELECT SUM("Total NF") AS total_paid, SUM("Total NF" - "Total") AS tax_paid, ROUND(100.0 * SUM("Total NF" - "Total") / NULLIF(SUM("Total NF"), 0), 2) AS percent_tax FROM vendas WHERE "Razão Social" = 'Alfa' AND strftime('%Y', "Emissão") = '2026';

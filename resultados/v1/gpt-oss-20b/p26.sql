@@ -1,0 +1,1 @@
+SELECT "#" AS codigo, "Descrição", SUM("Qnt") AS total_unidades FROM vendas WHERE "Nota" <> 'NFe 2217' GROUP BY "#", "Descrição" ORDER BY total_unidades DESC LIMIT 1;

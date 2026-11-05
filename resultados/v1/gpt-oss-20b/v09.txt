@@ -1,0 +1,1 @@
+ESCLARECER: Em qual coluna do banco estão armazenados os boletos e como identificamos se estão em atraso? Por favor, informe o nome da coluna que indica o tipo de pagamento (ex.: "Boleto") e a coluna que contém a data de vencimento ou o status de atraso.

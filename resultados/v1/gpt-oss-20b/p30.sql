@@ -1,0 +1,1 @@
+WITH monthly AS ( SELECT strftime('%Y-%m', Emissão) AS month, SUM(Total) AS total FROM vendas WHERE "Razão Social" LIKE '%Beta%' GROUP BY month ), avg_monthly AS ( SELECT AVG(total) AS avg_total FROM monthly ) SELECT month FROM monthly, avg_monthly WHERE total > avg_total ORDER BY month;

@@ -1,0 +1,1 @@
+SELECT DISTINCT strftime('%m', Emissão) AS mes FROM vendas WHERE (Razão Social LIKE '%Delta%' OR Nome Fantasia LIKE '%Delta%') AND (Descrição LIKE '%dosadora%' OR produto_base LIKE '%dosadora%') AND Qnt > 0 AND Nota <> 'NFe 2217' AND Emissão >= '2026-01-01' AND Emissão < '2027-01-01' ORDER BY mes;

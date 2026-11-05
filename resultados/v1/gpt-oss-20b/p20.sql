@@ -1,0 +1,1 @@
+SELECT emissao FROM pedidos_efetivos WHERE cliente LIKE '%Corneto%' ORDER BY emissao DESC LIMIT 1;

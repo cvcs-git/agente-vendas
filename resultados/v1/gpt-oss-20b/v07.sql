@@ -1,0 +1,1 @@
+SELECT CASE WHEN SUM(faturamento) = 0 THEN 0 ELSE SUM(CASE WHEN vendedor = 'Vendedor B' THEN faturamento END) / SUM(faturamento) * 100 END AS participacao_percentual FROM pedidos_efetivos WHERE date(emissao) >= '2026-01-01' AND date(emissao) <= '2026-02-28';

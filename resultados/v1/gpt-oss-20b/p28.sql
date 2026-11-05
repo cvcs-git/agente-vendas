@@ -1,0 +1,1 @@
+SELECT SUM(Total) AS faturamento FROM vendas WHERE strftime('%m', Emissão) = '05' AND strftime('%Y', Emissão) = strftime('%Y', 'now') AND "Cidade/UF" LIKE '%/RN';

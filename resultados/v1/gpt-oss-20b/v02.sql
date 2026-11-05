@@ -1,0 +1,1 @@
+SELECT SUM(Qnt) AS total_tampas_26_janeiro FROM vendas WHERE "#" = 26 AND strftime('%Y-%m', Emissão) = '2026-01' AND Nota <> 'NFe 2217';

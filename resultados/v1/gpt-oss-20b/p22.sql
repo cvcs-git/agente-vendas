@@ -1,0 +1,1 @@
+SELECT SUM("Total NF") AS total_gasto FROM vendas WHERE ("Razão Social" LIKE '%Delta%' OR "Nome Fantasia" LIKE '%Delta%') AND "Cidade/UF" LIKE '%Tampa 26%' AND strftime('%Y-%m', "Emissão") = '2026-03';

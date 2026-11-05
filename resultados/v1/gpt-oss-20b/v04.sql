@@ -1,0 +1,1 @@
+SELECT CASE WHEN EXISTS ( SELECT 1 FROM pedidos_efetivos WHERE cliente LIKE '%lambda%' AND strftime('%Y-%m', emissao) = strftime('%Y-%m', 'now') ) THEN 1 ELSE 0 END AS fez_pedido;

@@ -1,0 +1,1 @@
+SELECT DISTINCT "Razão Social" FROM vendas WHERE "Qnt" > 0 AND "Descrição" LIKE '%alça%' AND "Emissão" <= '2026-08-31 23:59:59' ORDER BY "Razão Social";

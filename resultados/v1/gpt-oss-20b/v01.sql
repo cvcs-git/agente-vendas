@@ -1,0 +1,1 @@
+SELECT SUM(Qnt) AS total_tampas_38_vermelhas FROM vendas WHERE (Descrição LIKE '%tampa 38 vermelha%' OR Descrição LIKE '%tampa 38 vermelhas%') AND strftime('%m', Emissão) = '04' AND Nota <> 'NFe 2217' AND Qnt > 0;

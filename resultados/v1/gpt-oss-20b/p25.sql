@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT Vendedor) AS total_vendedores FROM vendas WHERE Vendedor IS NOT NULL AND Vendedor <> '';

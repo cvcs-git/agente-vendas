@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT Nota) AS devolucoes_este_ano FROM vendas WHERE Total < 0 AND strftime('%Y', Emissão) = '2026' AND Nota <> 'NFe 2217';

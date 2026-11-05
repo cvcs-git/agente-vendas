@@ -33,3 +33,26 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 29/10/2026;openai/gpt-oss-20b;v1;P14;sim;sim;acerto acidental: usou "Razão Social" na view (coluna inexistente; SQLite tratou como texto) e o GROUP BY salvou o resultado
 29/10/2026;openai/gpt-oss-20b;v1;P15;sim;nao;comparou cada mes com o anterior (3 altas, 4 quedas) em vez das medias dos periodos; levaria a conclusao oposta
 29/10/2026;openai/gpt-oss-20b;v1;P16;sim;nao;escolheu faturamento sozinho em vez de pedir esclarecimento com ESCLARECER
+05/11/2026;openai/gpt-oss-20b;v1;P18;sim;sim;Resultado vazio (correto). LIKE '%alça%' não encontraria ALÇA em maiúsculas
+05/11/2026;openai/gpt-oss-20b;v1;P19;sim;não;Contou os 38 cancelamentos como devoluções sem ressalva (esperado SEM DADOS ou ESCLARECER). Aplicou a exclusão da NFe 2217 fora de soma de unidades
+05/11/2026;openai/gpt-oss-20b;v1;P20;sim;sim;Resultado vazio (correto). Buscou só na razão social, sem o nome fantasia pedido no prompt
+05/11/2026;openai/gpt-oss-20b;v1;P21;sim;não;Devolveu NULL (esperado 2026-07). Filtro LIKE '%tampa preta%' não encontra a descrição TAMPA ... :: PRETO e ignorou a coluna cor
+05/11/2026;openai/gpt-oss-20b;v1;P22;sim;não;Devolveu NULL (esperado 1890.40 ou 1984.92). Filtrou o produto na coluna Cidade/UF em vez de Descrição. Resto correto (Total NF com impostos)
+05/11/2026;openai/gpt-oss-20b;v1;P23;sim;sim;Correto (439 +184700). Acerto frágil: usou strftime('%Y','now') em vez da data do prompt. Funciona só porque o ano atual é 2026
+05/11/2026;openai/gpt-oss-20b;v1;P24;não;não;Erro de sintaxe: Razão Social e Nome Fantasia sem aspas. Lógica correta (daria os 7 meses do gabarito)
+05/11/2026;openai/gpt-oss-20b;v1;P25;sim;sim;Correto (3). Excluiu vendedor nulo ou vazio
+05/11/2026;openai/gpt-oss-20b;v1;P26;sim;não;Escolheu unidades sozinho (tampa 26 mm) em vez de ESCLARECER a métrica de principal
+05/11/2026;openai/gpt-oss-20b;v1;P27;sim;não;Qnt > 0 descartou cancelamentos (unidades brutas). GAMA saiu tampa 38 mm em vez de tampa 26 mm. Outros 4 clientes certos com quantidades infladas
+05/11/2026;openai/gpt-oss-20b;v1;P28;sim;sim;NULL (correto). Converteu para RN e filtrou Cidade/UF. Usou strftime('%Y','now') em vez da data do prompt
+05/11/2026;openai/gpt-oss-20b;v1;P29;sim;sim;Correto (40175.0). Descontou o cancelamento
+05/11/2026;openai/gpt-oss-20b;v1;P30;sim;sim;Correto (mar mai jun ago). Buscou só na razão social, sem o nome fantasia
+05/11/2026;openai/gpt-oss-20b;v1;V01;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v1;V02;sim;não;
+05/11/2026;openai/gpt-oss-20b;v1;V03;não;não;
+05/11/2026;openai/gpt-oss-20b;v1;V04;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v1;V05;sim;não;
+05/11/2026;openai/gpt-oss-20b;v1;V06;sim;não;
+05/11/2026;openai/gpt-oss-20b;v1;V07;sim;não;
+05/11/2026;openai/gpt-oss-20b;v1;V08;sim;não;
+05/11/2026;openai/gpt-oss-20b;v1;V09;não;não;
+05/11/2026;openai/gpt-oss-20b;v1;V10;sim;sim;
