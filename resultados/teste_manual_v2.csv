@@ -16,3 +16,26 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 30/10/2026;openai/gpt-oss-20b;v2;P14;sim;sim;acerto legitimo (na v1 foi acidental); acumulado sem ROWS UNBOUNDED PRECEDING
 python consulta.py resultados/v2/gpt-oss-20b/p15.sql
 30/10/2026;openai/gpt-oss-20b;v2;P16;nao;sim;pediu esclarecimento corretamente, mas o exemplo do prompt v2 era a propria pergunta (resultado contaminado)
+05/11/2026;openai/gpt-oss-20b;v2;P18;sim;sim;Resultado vazio (correto). Filtrou quantidade > 0 contra a regra do prompt. LIKE '%alça%' não encontraria ALÇA em maiúsculas
+05/11/2026;openai/gpt-oss-20b;v2;P19;sim;não;Contou cancelamentos como devoluções sem ressalva (esperado SEM DADOS ou ESCLARECER). Contou linhas de itens (82) e não notas
+05/11/2026;openai/gpt-oss-20b;v2;P20;não;não;Erro do prompt (mesmo da P08): nome_fantasia não existe em pedidos_efetivos. Lógica correta (daria NULL)
+05/11/2026;openai/gpt-oss-20b;v2;P21;sim;não;Devolveu NULL (esperado 2026-07). LIKE '%tampa preta%' não encontra TAMPA ... :: PRETO. Não separou vendas de cancelamentos
+05/11/2026;openai/gpt-oss-20b;v2;P22;não;não;Coluna inexistente city_uf. Filtrou o produto na coluna de cidade (mesmo erro da v1)
+05/11/2026;openai/gpt-oss-20b;v2;P23;sim;não;Devolveu 97 com aumento 0 (esperado 439 +184700). ROW_NUMBER antes do DISTINCT numerou as 1001 linhas e não os meses
+05/11/2026;openai/gpt-oss-20b;v2;P24;sim;sim;Correto (7 meses). Não separou vendas de cancelamentos (sem efeito nesta base)
+05/11/2026;openai/gpt-oss-20b;v2;P25;sim;sim;Correto (3)
+05/11/2026;openai/gpt-oss-20b;v2;P26;sim;não;Escolheu unidades sozinho (código 97) em vez de ESCLARECER a métrica de principal
+05/11/2026;openai/gpt-oss-20b;v2;P27;sim;sim;Correto (5 clientes, GAMA 97 com 627000). Unidades líquidas, corrigiu o erro da v1
+05/11/2026;openai/gpt-oss-20b;v2;P28;sim;sim;NULL (correto). LIKE '%RN%' mais solto que '%/RN' (sem efeito nesta base)
+05/11/2026;openai/gpt-oss-20b;v2;P29;sim;sim;Correto (40175.0)
+05/11/2026;openai/gpt-oss-20b;v2;P30;sim;sim;Correto (mar mai jun ago)
+05/11/2026;openai/gpt-oss-20b;v2;V01;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v2;V02;sim;não;
+05/11/2026;openai/gpt-oss-20b;v2;V03;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v2;V04;não;não;
+05/11/2026;openai/gpt-oss-20b;v2;V05;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v2;V06;sim;não;
+05/11/2026;openai/gpt-oss-20b;v2;V07;sim;não;
+05/11/2026;openai/gpt-oss-20b;v2;V08;sim;sim;
+05/11/2026;openai/gpt-oss-20b;v2;V09;não;sim;
+05/11/2026;openai/gpt-oss-20b;v2;V10;sim;sim;

@@ -1,0 +1,1 @@
+WITH prod_units AS ( SELECT cliente, codigo_produto, SUM(quantidade) AS unidades FROM itens GROUP BY cliente, codigo_produto ) SELECT cliente, codigo_produto, unidades FROM ( SELECT cliente, codigo_produto, unidades, ROW_NUMBER() OVER (PARTITION BY cliente ORDER BY unidades DESC) AS rn FROM prod_units ) t WHERE rn = 1 ORDER BY cliente;

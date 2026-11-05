@@ -1,0 +1,1 @@
+SELECT MAX(mes) AS ultimo_mes FROM itens WHERE (cliente LIKE '%Delta%' OR nome_fantasia LIKE '%Delta%') AND descricao LIKE '%tampa preta%'

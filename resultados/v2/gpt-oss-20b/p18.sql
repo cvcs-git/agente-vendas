@@ -1,0 +1,1 @@
+SELECT DISTINCT cliente FROM itens WHERE tipo = 'venda' AND quantidade > 0 AND descricao LIKE '%alça%' AND emissao <= '2026-08-31 23:59:59' ORDER BY cliente;

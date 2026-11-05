@@ -1,0 +1,1 @@
+SELECT ROUND((SUM(valor_com_impostos) - SUM(faturamento)) / SUM(valor_com_impostos) * 100, 1) AS percentual_imposto FROM itens WHERE (cliente LIKE '%Alfa%' OR nome_fantasia LIKE '%Alfa%') AND mes LIKE '2026-%';

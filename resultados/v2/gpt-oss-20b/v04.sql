@@ -1,0 +1,1 @@
+SELECT CASE WHEN COUNT(*) > 0 THEN 1 ELSE 0 END AS fez_pedido FROM pedidos_efetivos WHERE (cliente LIKE '%lambda%' OR nome_fantasia LIKE '%lambda%') AND mes = '2026-08';

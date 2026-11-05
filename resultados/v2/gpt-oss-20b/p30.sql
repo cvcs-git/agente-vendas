@@ -1,0 +1,1 @@
+WITH beta_monthly AS ( SELECT mes, SUM(faturamento) AS faturamento FROM itens WHERE cliente LIKE '%Beta%' OR nome_fantasia LIKE '%Beta%' GROUP BY mes ), beta_avg AS ( SELECT AVG(faturamento) AS avg_faturamento FROM beta_monthly ) SELECT bm.mes FROM beta_monthly bm JOIN beta_avg ba ON 1=1 WHERE bm.faturamento > ba.avg_faturamento ORDER BY bm.mes;

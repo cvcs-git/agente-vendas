@@ -1,0 +1,1 @@
+SELECT ROUND(SUM(faturamento), 2) AS gasto FROM itens WHERE (cliente LIKE '%Delta%' OR nome_fantasia LIKE '%Delta%') AND city_uf LIKE '%tampa 26%' AND mes = '2026-03';

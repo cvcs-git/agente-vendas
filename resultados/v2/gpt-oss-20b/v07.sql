@@ -1,0 +1,1 @@
+SELECT ROUND(vb.faturamento / tot.faturamento * 100, 1) AS participacao FROM ( SELECT SUM(faturamento) AS faturamento FROM itens WHERE mes IN ('2026-01', '2026-02') AND vendedor = 'Vendedor B' ) vb CROSS JOIN ( SELECT SUM(faturamento) AS faturamento FROM itens WHERE mes IN ('2026-01', '2026-02') ) tot;

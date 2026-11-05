@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS devolucoes FROM itens WHERE tipo = 'cancelamento' AND mes LIKE '2026-%';

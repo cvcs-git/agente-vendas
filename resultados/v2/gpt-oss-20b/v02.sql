@@ -1,0 +1,1 @@
+SELECT SUM(quantidade) AS unidades FROM itens WHERE codigo_produto = '26' AND mes = '2026-01';

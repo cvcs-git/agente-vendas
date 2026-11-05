@@ -1,0 +1,1 @@
+SELECT SUM(quantidade) AS unidades FROM itens WHERE mes = '2026-04' AND (descricao LIKE '%tampa 38 vermelha%' OR descricao LIKE '%tampa 38 vermelhas%');
