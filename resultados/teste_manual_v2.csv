@@ -79,3 +79,83 @@ python consulta.py resultados/v2/gpt-oss-20b/p15.sql
 05/11/2026;gemini-3.8-flash;v2;V08;não;não;
 05/11/2026;gemini-3.8-flash;v2;V09;não;sim;
 05/11/2026;gemini-3.8-flash;v2;V10;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P01;sim;sim;Correto (ALFA 28)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P02;sim;sim;Correto (788100), agrupou por produto_base e não por código
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P03;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P04;sim;não;Respondeu com vendas em vez de SEM DADOS
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P05;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P06;sim;sim;Correto (4415100), por produto_base
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P07;não;não;Erro: ambiguous column name cliente
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P08;sim;não;Ticket errado (4732.97)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P09a;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P09b;sim;sim;Correto
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P10;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P11;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P12;sim;não;Tratou rentável como faturamento (ALFA)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P13;sim;não;Variações erradas
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P14;sim;não;Devolveu o maior cliente, não a contagem
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P15;sim;não;Médias erradas (-53.9%)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P16;não;sim;Contaminada: o exemplo de ESCLARECER do prompt v2 é a própria pergunta. Fora do placar
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P18;sim;sim;Resultado vazio (correto)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P19;sim;não;Somou valores negativos como devoluções
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P20;sim;sim;NULL (correto)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P21;sim;não;Devolveu 2026-08 (esperado 2026-07)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P22;sim;não;Valor errado (452994.6)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P23;sim;não;Comparou semestres e não bimestres
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P24;sim;não;Incluiu abril (8 meses)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P25;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P26;sim;não;Escolheu unidades sem ESCLARECER a métrica
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P27;sim;não;Listou todos os produtos sem escolher o mais vendido
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P28;sim;sim;NULL (correto). Filtro cidade_uf = 'RN' nunca encontraria nada
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P29;sim;não;NULL (esperado 40175)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;P30;sim;não;Meses errados (jan abr)
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V01;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V02;sim;não;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V03;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V04;não;não;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V05;não;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V06;sim;não;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V07;sim;não;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V08;sim;não;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V09;não;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v2;V10;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v2;P01;sim;sim;Correto (ALFA 28)
+10/11/2026;gpt-oss:20b (ollama);v2;P02;sim;sim;Correto (439 788100)
+10/11/2026;gpt-oss:20b (ollama);v2;P03;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P04;sim;não;Respondeu com vendas em vez de SEM DADOS
+10/11/2026;gpt-oss:20b (ollama);v2;P05;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P06;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P07;sim;sim;Correto, com nº de intervalos (médias com 2 casas)
+10/11/2026;gpt-oss:20b (ollama);v2;P08;não;não;Erro do prompt: nome_fantasia não existe em pedidos_efetivos
+10/11/2026;gpt-oss:20b (ollama);v2;P09a;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P09b;sim;sim;Correto
+10/11/2026;gpt-oss:20b (ollama);v2;P10;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P11;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P12;sim;não;Tratou rentável como faturamento (ALFA)
+10/11/2026;gpt-oss:20b (ollama);v2;P13;sim;sim;Correto
+10/11/2026;gpt-oss:20b (ollama);v2;P14;sim;sim;Correto (4)
+10/11/2026;gpt-oss:20b (ollama);v2;P15;sim;sim;Correto (530694.9 775246.8 46.1)
+10/11/2026;gpt-oss:20b (ollama);v2;P16;não;sim;Contaminada: o exemplo de ESCLARECER do prompt v2 é a própria pergunta. Fora do placar
+10/11/2026;gpt-oss:20b (ollama);v2;P18;sim;sim;Resultado vazio (correto)
+10/11/2026;gpt-oss:20b (ollama);v2;P19;sim;não;Contou cancelamentos como devoluções (82)
+10/11/2026;gpt-oss:20b (ollama);v2;P20;não;não;Erro do prompt: nome_fantasia não existe em pedidos_efetivos
+10/11/2026;gpt-oss:20b (ollama);v2;P21;sim;não;Vazio (esperado 2026-07)
+10/11/2026;gpt-oss:20b (ollama);v2;P22;sim;não;NULL
+10/11/2026;gpt-oss:20b (ollama);v2;P23;sim;sim;Correto (439 +184700)
+10/11/2026;gpt-oss:20b (ollama);v2;P24;sim;sim;Correto (7 meses)
+10/11/2026;gpt-oss:20b (ollama);v2;P25;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;P26;sim;não;Escolheu unidades sem ESCLARECER a métrica
+10/11/2026;gpt-oss:20b (ollama);v2;P27;sim;sim;Correto (5 clientes)
+10/11/2026;gpt-oss:20b (ollama);v2;P28;sim;sim;NULL (correto)
+10/11/2026;gpt-oss:20b (ollama);v2;P29;sim;sim;Correto (40175)
+10/11/2026;gpt-oss:20b (ollama);v2;P30;sim;sim;Correto (mar mai jun ago)
+10/11/2026;gpt-oss:20b (ollama);v2;V01;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;V02;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v2;V03;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;V04;não;não;
+10/11/2026;gpt-oss:20b (ollama);v2;V05;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;V06;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v2;V07;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v2;V08;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;V09;não;sim;
+10/11/2026;gpt-oss:20b (ollama);v2;V10;sim;sim;

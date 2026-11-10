@@ -79,3 +79,83 @@ data;modelo;prompt;pergunta;sql_roda;resultado_correto;observacao
 05/11/2026;gemini-3.8-flash;v1;V08;sim;sim;
 05/11/2026;gemini-3.8-flash;v1;V09;não;sim;
 05/11/2026;gemini-3.8-flash;v1;V10;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P01;sim;sim;Correto (ALFA), só o nome sem a contagem
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P02;sim;não;Resultado vazio. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P03;sim;sim;Correto (ALFA 37.6%), percentual sem arredondar. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P04;sim;não;Respondeu com SQL de vendas (NULL) em vez de SEM DADOS. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P05;sim;sim;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P06;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P07;não;não;Erro: ambiguous column name cliente. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P08;sim;não;Devolveu NULL
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P09a;sim;sim;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P09b;sim;sim;Correto (VENDEDOR B 1158300)
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P10;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P11;sim;sim;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P12;sim;não;Tratou rentável como faturamento (ALFA)
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P13;sim;sim;Correto, percentuais sem arredondar. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P14;sim;não;Devolveu 0. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P15;sim;não;Série mensal sem comparar metades. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P16;sim;não;Escolheu faturamento sem ESCLARECER
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P18;sim;sim;Resultado vazio (correto)
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P19;sim;não;Contou cancelamentos como devoluções (72). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P20;sim;sim;NULL (correto). Buscou Corneto na descrição (leitura como produto). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P21;sim;não;NULL (esperado 2026-07). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P22;sim;não;NULL. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P23;sim;não;Produto errado (212). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P24;não;não;SEM DADOS em vez de SQL
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P25;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P26;sim;não;Escolheu unidades sem ESCLARECER a métrica. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P27;não;não;Erro: no such column cliente. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P28;não;não;Erro: no such column Cidade (sem aspas). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P29;sim;não;NULL (esperado 40175). Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;P30;sim;não;Vazio. Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V01;sim;sim;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V02;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V03;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V04;sim;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V05;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V06;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V07;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V08;sim;não;Markdown removido
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V09;não;sim;
+10/11/2026;qwen2.5-coder:7b (ollama);v1;V10;sim;sim;Markdown removido
+10/11/2026;gpt-oss:20b (ollama);v1;P01;sim;sim;Correto (ALFA 28)
+10/11/2026;gpt-oss:20b (ollama);v1;P02;sim;não;Resultado vazio
+10/11/2026;gpt-oss:20b (ollama);v1;P03;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P04;sim;não;Respondeu com vendas em vez de SEM DADOS
+10/11/2026;gpt-oss:20b (ollama);v1;P05;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P06;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P07;não;não;Duas consultas na mesma resposta. Markdown removido
+10/11/2026;gpt-oss:20b (ollama);v1;P08;sim;não;Devolveu NULL
+10/11/2026;gpt-oss:20b (ollama);v1;P09a;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P09b;não;não;Erro: no such column Emissao
+10/11/2026;gpt-oss:20b (ollama);v1;P10;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P11;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P12;sim;não;Tratou rentável como faturamento (ALFA)
+10/11/2026;gpt-oss:20b (ollama);v1;P13;sim;sim;Correto, percentuais sem arredondar
+10/11/2026;gpt-oss:20b (ollama);v1;P14;sim;não;Devolveu 3
+10/11/2026;gpt-oss:20b (ollama);v1;P15;sim;não;Comparação mês a mês
+10/11/2026;gpt-oss:20b (ollama);v1;P16;sim;não;Escolheu faturamento sem ESCLARECER
+10/11/2026;gpt-oss:20b (ollama);v1;P18;sim;sim;Resultado vazio (correto)
+10/11/2026;gpt-oss:20b (ollama);v1;P19;sim;não;Contou cancelamentos como devoluções (38)
+10/11/2026;gpt-oss:20b (ollama);v1;P20;sim;sim;NULL (correto)
+10/11/2026;gpt-oss:20b (ollama);v1;P21;sim;não;Vazio (esperado 2026-07)
+10/11/2026;gpt-oss:20b (ollama);v1;P22;sim;não;NULL
+10/11/2026;gpt-oss:20b (ollama);v1;P23;sim;sim;Correto (439 +184700). Acerto frágil: strftime('%Y','now')
+10/11/2026;gpt-oss:20b (ollama);v1;P24;não;não;Erro de sintaxe: Razão Social sem aspas
+10/11/2026;gpt-oss:20b (ollama);v1;P25;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;P26;sim;não;Escolheu unidades sem ESCLARECER a métrica
+10/11/2026;gpt-oss:20b (ollama);v1;P27;sim;sim;Correto (5 clientes, GAMA 97 627000)
+10/11/2026;gpt-oss:20b (ollama);v1;P28;sim;sim;NULL (correto)
+10/11/2026;gpt-oss:20b (ollama);v1;P29;sim;sim;Correto (40175)
+10/11/2026;gpt-oss:20b (ollama);v1;P30;sim;sim;Correto (mar mai jun ago)
+10/11/2026;gpt-oss:20b (ollama);v1;V01;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;V02;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v1;V03;não;não;
+10/11/2026;gpt-oss:20b (ollama);v1;V04;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;V05;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;V06;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v1;V07;sim;não;
+10/11/2026;gpt-oss:20b (ollama);v1;V08;sim;sim;
+10/11/2026;gpt-oss:20b (ollama);v1;V09;não;não;
+10/11/2026;gpt-oss:20b (ollama);v1;V10;sim;sim;
