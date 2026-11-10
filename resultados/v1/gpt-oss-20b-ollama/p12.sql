@@ -1,0 +1,10 @@
+SELECT
+    cliente,
+    SUM(faturamento) AS faturamento_total
+FROM
+    pedidos_efetivos
+GROUP BY
+    cliente
+ORDER BY
+    faturamento_total DESC
+LIMIT 1;

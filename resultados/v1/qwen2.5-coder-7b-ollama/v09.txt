@@ -1,0 +1,1 @@
+SEM DADOS: A consulta não pode ser realizada sem informações sobre os prazos de pagamento e a data atual.

@@ -1,0 +1,5 @@
+SELECT cliente, ROUND(SUM(faturamento), 2) AS faturamento
+FROM itens
+GROUP BY cliente
+ORDER BY faturamento DESC
+LIMIT 1;

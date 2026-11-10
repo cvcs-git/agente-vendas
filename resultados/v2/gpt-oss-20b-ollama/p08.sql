@@ -1,0 +1,3 @@
+SELECT ROUND(SUM(faturamento) / COUNT(*), 2) AS ticket_medio
+FROM pedidos_efetivos
+WHERE cliente LIKE '%Comercial Alfa%' OR nome_fantasia LIKE '%Comercial Alfa%';

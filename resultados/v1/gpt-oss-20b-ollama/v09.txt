@@ -1,0 +1,1 @@
+ESCLARECER: Qual coluna indica a data de vencimento dos boletos e como identificamos se um boleto está pago ou não?

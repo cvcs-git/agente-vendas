@@ -17,6 +17,8 @@ Definidas em 03 e 05/11/2026, antes das rodadas complementares da v1 e da v2.
 5. Data de referência: 31/08/2026.
 6. Em perguntas sem dados, só SEM DADOS conta como acerto. ESCLARECER conta como erro, porque os prompts reservam ESCLARECER para perguntas com mais de uma interpretação (decidido em 05/11/2026, na V09 da v1).
 7. Mês ou período sem ano (bimestre, trimestre etc.) se refere ao ano da data de referência (2026). Pedir esclarecimento sobre o ano conta como erro (decidido em 05/11/2026, na P22 do Gemini v1).
+8. Marcação markdown em volta da consulta (```sql e ```) é removida antes de executar, em todos os modelos. O uso de markdown é anotado na observação como falha de formato e contado à parte (decidido em 10/11/2026, antes da correção das rodadas locais).
+
 
 ## Rodadas complementares (só perguntas novas, salvo indicação)
 

@@ -1,0 +1,5 @@
+```sql
+SELECT COUNT(DISTINCT cliente) AS clientes_atendidos
+FROM pedidos_efetivos
+WHERE vendedor = 'A' AND strftime('%Y-%m', emissao) = '2026-05';
+```

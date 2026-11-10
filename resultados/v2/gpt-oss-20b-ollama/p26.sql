@@ -1,0 +1,5 @@
+SELECT codigo_produto, SUM(quantidade) AS unidades
+FROM itens
+GROUP BY codigo_produto
+ORDER BY unidades DESC
+LIMIT 1;

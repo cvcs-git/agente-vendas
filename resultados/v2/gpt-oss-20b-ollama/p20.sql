@@ -1,0 +1,3 @@
+SELECT MAX(emissao) AS ultima_compra
+FROM pedidos_efetivos
+WHERE cliente LIKE '%Corneto%' OR nome_fantasia LIKE '%Corneto%';

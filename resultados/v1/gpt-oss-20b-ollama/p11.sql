@@ -1,0 +1,5 @@
+SELECT COUNT(DISTINCT "#") AS produtos_diferentes
+FROM vendas
+WHERE strftime('%Y-%m', Emissão) = '2026-05'
+  AND Total > 0
+  AND Nota <> 'NFe 2217';

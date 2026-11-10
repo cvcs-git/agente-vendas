@@ -1,0 +1,1 @@
+ESCLARECER: Qual métrica você deseja usar para determinar o melhor mês?
